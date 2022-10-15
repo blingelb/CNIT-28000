@@ -2,9 +2,10 @@
 <html lang="en" dir="ltr">
 
 <script type="text/javascript">
-  function display_plan
+  function plan_prompt() {
+    prompt("Send Request to Sponsor", "");
+  }
 </script>
-
 
   <head>
     <meta charset="utf-8">
@@ -12,7 +13,7 @@
   </head>
   <body>
     Members can manage their active plans here.
-    <button type="button" name="manage_plan">Request Plan</button>
+    <button onclick="plan_prompt()">Request Plan</button>
 
   </body>
 
