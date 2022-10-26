@@ -4,10 +4,65 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
-    Sponsors can manage their active plans and members here.
-  </body>
 
-  <a href="index.html"><button>Back</button>
+  <script type="text/javascript">
+    function confirm () {
+      window.alert("Changes successfuly updated.")
+    }
+  </script>
+
+  <body>
+    <h1>Manage Applied Plans</h1>
+    <br>
+    <p>Sponsors can manage their active plans and members here.</p>
+    <br>
+
+    <table border="1">
+      <tr>
+        <th>Member Email</th>
+        <th>Add Plan</th>
+        <th>Confirm</th>
+      </tr>
+
+      <tr>
+        <td>bobjoe@hotmail.com</td>
+        <td>
+          <select name="Add Plan" id="plans">
+            <option value="Medical">Medical</option>
+            <option value="Dental">Dental</option>
+            <option value="Life">Life</option>
+          </select>
+        </td>
+        <td><a href="sponsorMain.html" value="Script" onclick="confirm()"><button>Apply Changes</button></td>
+      </tr>
+
+      <tr>
+        <td>robmoe@hotmail.com</td>
+        <td>
+          <select name="Add Plan" id="plans">
+            <option value="Medical">Medical</option>
+            <option value="Dental">Dental</option>
+            <option value="Life">Life</option>
+          </select>
+        </td>
+        <td><a href="sponsorMain.html" value="Script" onclick="confirm()"><button>Apply Changes</button></td>
+      </tr>
+
+      <tr>
+        <td>mobpoe@hotmail.com</td>
+        <td>
+          <select name="Add Plan" id="plans">
+            <option value="Medical">Medical</option>
+            <option value="Dental">Dental</option>
+            <option value="Life">Life</option>
+          </select>
+        </td>
+        <td><a href="sponsorMain.html" value="Script" onclick="confirm()"><button>Apply Changes</button></td>
+      </tr>
+
+    </table>
+  </body>
+  <br>
+  <a href="sponsorMain.html"><button>Back</button>
   <br>
 </html>
