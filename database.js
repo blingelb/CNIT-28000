@@ -7,6 +7,7 @@ class Member {
 
   function create(String id, String email, String password) {
     Member newMember = new Member(id, email, password);
+
   }
 }
 
