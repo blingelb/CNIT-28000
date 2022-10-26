@@ -9,3 +9,15 @@ class Member {
     Member newMember = new Member(id, email, password);
   }
 }
+
+class Sponsor {
+  constructor(sponsorID, sponsorEmail, sponsorPassword) {
+    this.sponsorID = sponsorID;
+    this.sponsorEmail = sponsorEmail;
+    this.sponsorPassword = sponsorPassword;
+  }
+
+  function create(String id, String email, String password) {
+    Sponsor newSponsor = new Member(id, email, password);
+  }
+}
