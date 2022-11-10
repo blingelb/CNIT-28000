@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
+<script type="text/javascript">
+  function sendRequest() {
+    confirm("Request Sent")
+  }
+</script>
+
   <head>
     <meta charset="utf-8">
     <title></title>
@@ -12,7 +19,14 @@
     </select>
 
     <select name="Choose Sponsor">
-      <option value=""></option>
+      <option value="Brickfilms_LLC">Brickfilms LLC</option>
+      <option value="MovieShows_LLC">MovieShows LLC</option>
     </select>
+
+    <button onclick="sendRequest()">Submit</button>
+    <br>
+
+    <a href="memberManage.html"><button name="Back">Back</button>
+
   </body>
 </html>
