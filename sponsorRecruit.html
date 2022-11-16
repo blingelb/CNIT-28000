@@ -40,21 +40,35 @@
             color: black;
             box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         }
-
+button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -15px;
+            transition: 0.5s;
+        }
+        button:hover span {
+            padding-right: 10px;
+        }
+        button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
     </style>
   <body>
-    <h1>Sponsor New Plan Request Management</h1>
+    <h1>New Member Recruitment</h1>
     <br>
     <script type="text/javascript">
     function accept () {
-      window.alert("New Plan Request Has Been Accepted")
-    }
-  </script>
-    <script type="text/javascript">
-    function reject () {
-      window.alert("New Plan Request Has Been Rejected")
-    }
-  </script>
+      window.alert("New Member Recruitment Request Has Been Accepted")
+    </script>
 
     Plan Request Management Demo Table:
     <table border="1" id="members">
@@ -63,17 +77,13 @@
         <th>Last Name</th>
         <th>Email</th>
         <th>Accept Request</th>
-        <th>Reject Request</th>
       </tr>
       <tr>
         <td>Billy</td>
         <td>Bob</td>
         <td>billybob@hotmail.com</td>
         <td>
-        <a href="manageNewPlanRequests.html" value="Script" onclick="accept()"><button>Accept Request</button>
-        </td>
-        <td>
-        <a href="manageNewPlanRequests.html" value="Script" onclick="reject()"><button>Reject Request</button>
+        <a href="manageNewPlanRequests.html" value="Script" onclick="accept()"><button><span>Send Request</span></button>
         </td>
       </tr>
       <tr>
@@ -81,10 +91,7 @@
         <td>Schmoe</td>
         <td>joeschmoe@hotmail.com</td>
         <td>
-        <a href="manageNewPlanRequests.html" value="Script" onclick="accept()"><button>Accept Request</button>
-        </td>
-        <td>
-        <a href="manageNewPlanRequests.html" value="Script" onclick="reject()"><button>Reject Request</button>
+        <a href="manageNewPlanRequests.html" value="Script" onclick="accept()"><button><span>Send Request</span></button>
         </td>
       </tr>
       <tr>
@@ -92,25 +99,20 @@
         <td>Queue</td>
         <td>susiequeue@hotmail.com</td>
         <td>
-        <a href="manageNewPlanRequests.html" value="Script" onclick="accept()"><button><span>Accept Request</span></button>
-        </td>
-        <td>
-        <a href="manageNewPlanRequests.html" value="Script" onclick="reject()"><button><span>Reject Request</span></button>
+        <a href="manageNewPlanRequests.html" value="Script" onclick="accept()"><button><span>Send Request</span></button>
         </td>
       </tr>
-            <tr>
+        <tr>
         <td>Susie</td>
         <td>Queue</td>
         <td>susiequeue@hotmail.com</td>
         <td>
-        <a href="manageNewPlanRequests.html" value="Script" onclick="accept()"><button><span>Accept Request</span></button>
+        <a href="manageNewPlanRequests.html" value="Script" onclick="accept()"><button><span>Send Request</span></button>
         </td>
         <td>
-        <a href="manageNewPlanRequests.html" value="Script" onclick="reject()"><button><span>Reject Request</span></button>
         </td>
       </tr>
     </table>
-
     <a href="sponsorMain.html"><button>Back</button>
     <br>
   </body>
