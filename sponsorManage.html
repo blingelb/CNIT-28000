@@ -3,8 +3,84 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+        <style>
+        #members {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #members td, #members th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        #members tr:nth-child(even){background-color: #f2f2f2;}
+        #members tr:hover {background-color: #ddd;}
+        #members th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #9e9e9e;
+            color: black;
+        }
+        button {
+            background-color: #9e9e9e;
+            border: solid #929292;
+            color: white;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            border-radius: 4px;
+            transition-duration: 0.4s;
+        }
+        button:hover {
+            background-color: #FFF;
+            color: black;
+            box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -10px;
+            transition: 0.5s;
+        }
+        button:hover span {
+            padding-right: 10px;
+        }
+        button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        select {
+            background-color: #9e9e9e;
+            border: solid #929292;
+            color: white;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            border-radius: 4px;
+            transition-duration: 0.4s;
+        }
+        select:hover {
+            background-color: #FFF;
+            color: black;
+            box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        </style>
   </head>
   <body>
+      <h1>Sponsor Member Management</h1>
     Sponsors can manage their active plans and members here.
   </body>
 
@@ -16,10 +92,24 @@
 
 
 <body>
-  
- <a value="Script" onclick="Remove()"><button>Remove Benefits</button>
 
+ <br>
+     <select name="Choose Sponsor">
+      <option value="Bob_Joe">Bob Joe</option>
+      <option value="Rob_Moe">Rob Moe</option>
+      <option value="Mob_Poe">Mob Poe</option>
+      <option value="John_Doe">John Doe</option>
+      <option value="Jane_Doe">Jane Doe</option>
+      <option value="Richard_Miles">Richard Miles</option>
+      <option value="Grace_Goe">Grace Goe</option>
+      <option value="Walter_White">Walter White</option>
+      <option value="Saul_Goodman">Saul Goodman</option>
+    </select>
+ <a value="Script" onclick="Remove()"><button>Remove Benefits</button>
+</br>
+<br>
   <a href="index.html"><button>Back</button>
+  </br>
 </body>
 
   <br>
