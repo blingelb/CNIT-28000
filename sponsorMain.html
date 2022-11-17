@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        #members {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #members td, #members th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        #members tr:nth-child(even){background-color: #f2f2f2;}
+        #members tr:hover {background-color: #ddd;}
+        #members th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #9e9e9e;
+            color: black;
+        }
+        button {
+            background-color: #9e9e9e;
+            border: solid #929292;
+            color: white;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            border-radius: 4px;
+            transition-duration: 0.4s;
+        }
+        button:hover {
+            background-color: #FFF;
+            color: black;
+            box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -10px;
+            transition: 0.5s;
+        }
+        button:hover span {
+            padding-right: 10px;
+        }
+        button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>Sponsor Main Page</h1>
+    <br>
+
+    Demo Table:
+    <table border="1" id="members">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Applied Plans</th>
+        <th>Remove Member</th>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>Joe</td>
+        <td>bobjoe@hotmail.com</td>
+        <td>
+          <a href="sponsorManage.html"><button><span>Manage</span></button>
+        </td>
+        <td>
+          <a href="memberRemove.html"><button><span>Remove</span></button>
+        </td>
+      </tr>
+      <tr>
+        <td>Rob</td>
+        <td>Moe</td>
+        <td>robmoe@hotmail.com</td>
+        <td>
+          <a href="sponsorManage.html"><button><span>Manage</span></button>
+        </td>
+        <td>
+          <a href="memberRemove.html"><button><span>Remove</span></button>
+        </td>
+      </tr>
+      <tr>
+        <td>Mob</td>
+        <td>Poe</td>
+        <td>mobpoe@hotmail.com</td>
+        <td>
+          <a href="sponsorManage.html"><button><span>Manage</span></button>
+        </td>
+        <td>
+          <a href="memberRemove.html"><button><span>Remove</span></button>
+        </td>
+      </tr>
+            <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>johndoe@hotmail.com</td>
+        <td>
+          <a href="sponsorManage.html"><button><span>Manage</span></button>
+        </td>
+        <td>
+          <a href="memberRemove.html"><button><span>Remove</span></button>
+        </td>
+      </tr>
+            <tr>
+        <td>Jane</td>
+        <td>Doe</td>
+        <td>janedoe@hotmail.com</td>
+        <td>
+          <a href="sponsorManage.html"><button><span>Manage</span></button>
+        </td>
+        <td>
+          <a href="memberRemove.html"><button><span>Remove</span></button>
+        </td>
+      </tr>
+            <tr>
+        <td>Richard</td>
+        <td>Miles</td>
+        <td>richardmiles@hotmail.com</td>
+        <td>
+          <a href="sponsorManage.html"><button><span>Manage</span></button>
+        </td>
+        <td>
+          <a href="memberRemove.html"><button><span>Remove</span></button>
+        </td>
+      </tr>
+            <tr>
+        <td>Grace</td>
+        <td>Goe</td>
+        <td>gracegoe@hotmail.com</td>
+        <td>
+          <a href="sponsorManage.html"><button><span>Manage</span></button>
+        </td>
+        <td>
+          <a href="memberRemove.html"><button><span>Remove</span></button>
+        </td>
+      </tr>
+            <tr>
+        <td>Walter</td>
+        <td>White</td>
+        <td>walterwhite@hotmail.com</td>
+        <td>
+          <a href="sponsorManage.html"><button><span>Manage</span></button>
+        </td>
+        <td>
+          <a href="memberRemove.html"><button><span>Remove</span></button>
+        </td>
+      </tr>
+            <tr>
+        <td>Saul</td>
+        <td>Goodman</td>
+        <td>saulgoodman@hotmail.com</td>
+        <td>
+          <a href="sponsorManage.html"><button><span>Manage</span></button>
+        </td>
+        <td>
+          <a href="memberRemove.html"><button><span>Remove</span></button>
+        </td>
+      </tr>
+    </table>
+
+    <a href="index.html"><button>Back</button></a>
+    <a href="manageNewPlanRequests.html"><button><span>Manage Requests</span></button></a>
+    <a href="sponsorRecruit.html"><button><span>Manage Members</span></button>
+    <br>
+  </body>
+</html>
