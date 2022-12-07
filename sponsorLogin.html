@@ -5,6 +5,12 @@
     <meta charset="utf-8">
     <title></title>
   </head>
+
+    <script type="text/javascript">
+    function sent () {
+      window.alert("Message Successfully Sent. We will contact you once we read your message.")
+    }
+  </script>
   <body>
     <h1>Sponsor Login</h1><br>
     <label for="ID">Sponsor ID:</label>
@@ -18,8 +24,17 @@
     <a href="sponsorMain.html"><button><span>Login</span></button>
     <br>
 
-    <a href="index.html"><button>Back</button>
-    <br>
+    <a href="index.html"><button>Back</button></a>
+    <br><br><br><br><br><br>
+     <p>If you do not have a Sponsor ID or forgot your Sponsor ID, please fill out your information below</p>
+    <label for="firstName">First Name:</label>
+    <input type="text" name="firstName" id="firstName"> <br> <br>
+        <label for="lastName">Last Name:</label>
+    <input type="text" name="lastName" id="lastName"> <br> <br>
+        <label for="companyName">Company Name:</label>
+    <input type="text" name="companyName" id=companyName><br>
+        <a href="index.html"><button>Back</button></a>
+    <a href="sponsorLogin.html" onclick="sent()"><button><span>Send</span></button></a>
 
   </body>
 </html>
